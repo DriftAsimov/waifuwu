@@ -15,7 +15,7 @@ or simply search waifuwu in [Extensions Marketplace](https://marketplace.visuals
 Currently the extension is very basic. New features will be released in due course of time.
 
 #### `waifuwu: Get Waifu`
-\
+
 ![Available Options](images/options.png)
 
 Selecting one of the options opens an image of a waifu from the selected category in your default browser.
