@@ -6,7 +6,7 @@ Enjoy waifus' company while you code!
 
 ## Installation
 
-Run `code --install-extension drift.waifuwu`
+Run `code --install-extension DriftAsimov.waifuwu`
 
 or simply search waifuwu in [Extensions Marketplace](https://marketplace.visualstudio.com/vscode).
 
