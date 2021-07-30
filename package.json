@@ -3,14 +3,29 @@
 	"displayName": "waifuwu",
 	"description": "Enjoy waifus' company while you code!",
 	"version": "0.0.1",
-	"publisher" : "DriftAsimov",
+	"publisher" : "Drift",
+	"repository": {
+		"type" : "git",
+		"url" : "https://github.com/DriftAsimov/waifuwu"
+	},
 	"icon": "images/icon.png",
+	"galleryBanner": {
+		"color" : "#F57CFF",
+		"theme" : "dark"
+	},
+	"homepage": "https://github.com/DriftAsimov/waifuwu/blob/main/README.md",
+	"bugs": {
+		"url": "https://github.com/DriftAsimov/waifuwu/issues",
+		"email": "driftasimov@gmail.com"
+	},
 	"engines": {
 		"vscode": "^1.58.0"
 	},
 	"categories": [
 		"Other"
 	],
+	"keywords": ["anime", "waifu", "waifuwu", "otaku", "cute"],
+	"license": "SEE LICENSE IN LICENSE",
 	"activationEvents": [
 		"onCommand:waifuwu.getWaifu"
 	],
