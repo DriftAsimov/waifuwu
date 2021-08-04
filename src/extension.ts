@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 const fetch = require("node-fetch");
 
-let baseUrl = "https://waifu.pics/api/sfw/";
+const baseUrl = "https://waifu.pics/api/sfw/";
 const flavours = ["waifu", "neko", "shinobu", "megumin", "random"];
 
 export function activate(context: vscode.ExtensionContext) {
@@ -14,26 +14,48 @@ export function activate(context: vscode.ExtensionContext) {
 		.showQuickPick(flavours, {})
 		.then((r) => {
 
+			if (!r) { return; };
+
 			if (r === "random")
 			{
-				r = flavours[Math.floor(Math.random()*flavours.length)];
-				console.log(r);
+				r = flavours[Math.floor(Math.random() * flavours.length)];
 			}
 
-			{
-				let url = baseUrl += r;
+			const url = baseUrl + r;
 
-				fetch(url)
-					.then((res: { json: () => any; }) => res.json())
-					.then((res: { [x: string]: string; }) => {
-						vscode.env.openExternal(vscode.Uri.parse(res["url"]));
+			fetch(url)
+				.then((res: { json: () => any; }) => res.json())
+				.then((res: { [x: string]: string; }) =>
+					{
+						const panel = vscode.window.createWebviewPanel(
+							'waifu',
+							r || "Waifu",
+							vscode.ViewColumn.One,
+							{}
+						);
+			
+						panel.webview.html = displayWaifu(res["url"]);
 					});
-			}
 		});
 
 	});
 
 	context.subscriptions.push(disposable);
+}
+
+function displayWaifu(imageUrl: string)
+{
+	return `<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Waifu</title>
+	</head>
+	<body>
+		<img src=${imageUrl} width="400"/>
+	</body>
+	</html>`;
 }
 
 export function deactivate() {}
