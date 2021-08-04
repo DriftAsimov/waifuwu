@@ -1,6 +1,6 @@
 # waifuwu
 
-<img src = "https://i.imgur.com/Qit6i28.png" align = "right" width = 300>
+<img src = "https://i.imgur.com/Qit6i28.png" align = "right" width = 200>
 
 Enjoy waifus' company while you code!
 
