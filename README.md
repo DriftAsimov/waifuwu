@@ -1,6 +1,6 @@
 # waifuwu
 
-<img src = "https://i.imgur.com/Qit6i28.png" align = "right">
+<img src = "https://i.imgur.com/Qit6i28.png" align = "right" width = 300>
 
 Enjoy waifus' company while you code!
 
@@ -8,7 +8,7 @@ Enjoy waifus' company while you code!
 
 Run `code --install-extension DriftAsimov.waifuwu`
 
-or simply install it from [Extensions Marketplace](https://marketplace.visualstudio.com/items?itemName=DriftAsimov.waifuwu).
+or simply search waifuwu in [Extensions Marketplace](https://marketplace.visualstudio.com/vscode).
 
 ## Features
 
@@ -16,7 +16,7 @@ Currently the extension is very basic. New features will be released in due cour
 
 #### `waifuwu: Get Waifu`
 
-![Available Options](https://i.imgur.com/8RRVlEF.png)
+<img src = "https://i.imgur.com/yk1LtqS.gif" width = 600>
 
 Selecting one of the options opens an image of a waifu from the selected category in your default browser.
 
