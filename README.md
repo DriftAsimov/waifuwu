@@ -18,7 +18,7 @@ Currently the extension is very basic. New features will be released in due cour
 
 <img src = "https://i.imgur.com/yk1LtqS.gif" width = 600>
 
-Selecting one of the options opens an image of a waifu from the selected category in your default browser.
+Selecting one of the options opens an image of a waifu from the selected category in a new window
 
 ## Contribute
 
