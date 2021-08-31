@@ -2,7 +2,7 @@
 	"name": "waifuwu",
 	"displayName": "waifuwu",
 	"description": "Enjoy waifus' company while you code!",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"publisher" : "DriftAsimov",
 	"repository": {
 		"type" : "git",
@@ -10,7 +10,7 @@
 	},
 	"icon": "images/icon.png",
 	"galleryBanner": {
-		"color" : "#76D3E0",
+		"color" : "#DA44AC",
 		"theme" : "dark"
 	},
 	"homepage": "https://github.com/DriftAsimov/waifuwu/blob/main/README.md",
