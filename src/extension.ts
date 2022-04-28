@@ -24,6 +24,10 @@ export function activate(context: vscode.ExtensionContext) {
 			const url = baseUrl + r;
 
 			fetch(url)
+				.catch((err: Error) =>
+					{
+						vscode.window.showErrorMessage(err.message);
+					})
 				.then((res: { json: () => any; }) => res.json())
 				.then((res: { [x: string]: string; }) =>
 					{
